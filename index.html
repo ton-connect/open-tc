@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Connect Wallet</title>
+</head>
+<body>
+    <script>
+        const urlSearchParams = new URLSearchParams(window.location.search);
+        const deeplink = urlSearchParams.get('connect');
+        if (deeplink) {
+            window.location.assign(deeplink);
+        }
+    </script>
+</body>
+</html>
